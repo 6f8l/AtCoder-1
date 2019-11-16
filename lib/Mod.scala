@@ -4,6 +4,7 @@ object Mod {
 case class Mod(n: Int, mod: Int) {
   val factorial: Array[Int] = Array.fill[Int](n + 1)(1)
   val inverse: Array[Int] = Array.fill[Int](n + 1)(1)
+  inverse(0) = 0
   val inverseFactorial: Array[Int] = Array.fill[Int](n + 1)(1)
   Loop.rep(n - 1, i => {
     val k = i + 2
