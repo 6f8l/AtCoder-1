@@ -1,3 +1,5 @@
+package lib
+
 object PrimeNumbers {
   def isPrimeNumber(n: Int): Boolean = ???
   def createUntil(n: Int): Array[Int] = {

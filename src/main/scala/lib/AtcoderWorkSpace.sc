@@ -1,3 +1,5 @@
+package lib
+
 import java.io.PrintWriter
 
 object Loop {
@@ -82,12 +84,39 @@ object Scanner {
 //
 ////////////////////////////////////////
 object Main extends App {
-  val n = Scanner.nextInt()
+
+  val a, b, x = Scanner.nextLong()
+  def d(n: Long): Long = String.valueOf(n).length()
+  val maxN: Long = x / a
+  val maxD: Long = d(maxN)
+  val result: Long = (1L to maxD).map(i => {
+    val n = (x - i * b) / a
+    if (d(n) == i) n else 0L
+  }).max
+  if (result >= 1000000000L) println(1000000000L)
+  else println(result)
 
 }
-////////////////////////////////////////
-//
-////////////////////////////////////////
-val start = java.time.Instant.now().toEpochMilli
 
-println(java.time.Instant.now().toEpochMilli - start)
+
+val a: Long = 1
+val b: Long = 999999999
+val x: Long = 1111298989898L
+def d(n: Long): Long = String.valueOf(n).length()
+val maxN: Long = x / a
+val maxD: Long = d(maxN)
+val result: Long = (1L to maxD + 1).map(i => {
+  val n: Long = (x - i * b) / a
+  if ((a * n + b * d(n)) > x) 0L else if (d(n) == i) n else 0L
+}).max
+if (result >= 1000000000L) println(1000000000L)
+else println(result)
+
+
+
+
+
+
+
+
+

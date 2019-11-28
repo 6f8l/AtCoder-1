@@ -1,3 +1,5 @@
+package lib
+
 object WarshallFloyd {
   def create(arr: Array[Array[Int]]): WarshallFloyd = {
     val i = WarshallFloyd(arr)

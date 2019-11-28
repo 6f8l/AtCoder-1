@@ -1,3 +1,5 @@
+package lib
+
 object Mod {
   def create(n: Int, mod: Int) = Mod(n, mod)
 }

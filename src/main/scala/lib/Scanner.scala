@@ -1,3 +1,5 @@
+package lib
+
 import java.io.PrintWriter
 
 object Scanner {

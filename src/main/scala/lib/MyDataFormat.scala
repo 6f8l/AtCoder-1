@@ -1,3 +1,5 @@
+package lib
+
 object MyDataFormat {
   def double(x: Double, precision: Int): String = {
     var num = x

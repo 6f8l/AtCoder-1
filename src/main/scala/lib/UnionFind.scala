@@ -1,3 +1,5 @@
+package lib
+
 case class UnionFind(n: Int) {
   //添字が固有ID、値が親IDを表す
   val arr: Array[Int] = Array.tabulate[Int](n)(identity)

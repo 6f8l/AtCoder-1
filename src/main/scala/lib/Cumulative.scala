@@ -1,3 +1,5 @@
+package lib
+
 object Cumulative {
 
   case class CumulativeProduct(arr: Array[Int]) {

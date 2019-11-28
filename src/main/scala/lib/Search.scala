@@ -1,3 +1,5 @@
+package lib
+
 object Search {
   def find(data: Array[Int], key: Int): Option[Int] = {
     val res = java.util.Arrays.binarySearch(data, key)
